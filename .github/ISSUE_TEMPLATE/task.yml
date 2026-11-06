@@ -1,0 +1,27 @@
+name: Task
+description: A specific, well-understood piece of work (chore, migration, config, docs).
+title: "[Task]: "
+type: Task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this needed? Link related issues, Epics or docs.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: Definition of done
+      description: Concrete checklist of what needs to happen.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else (links, constraints, owners).

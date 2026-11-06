@@ -1,0 +1,44 @@
+name: Initiative
+description: A portfolio-level outcome spanning a quarter or more; parent of Epics.
+title: "[Initiative]: "
+type: Initiative
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Initiatives are portfolio-level outcomes for the Caldrion studio platform. Add the Epics that deliver it
+        as **sub-issues** and post progress in the portfolio project's status updates.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: The change in the world we are committing to.
+    validations:
+      required: true
+  - type: textarea
+    id: why-now
+    attributes:
+      label: Why now
+      description: Evidence, deadlines or opportunities that make this a priority this quarter.
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Success metrics
+      description: How we'll measure success, with baseline and target where known.
+    validations:
+      required: true
+  - type: dropdown
+    id: quarter
+    attributes:
+      label: Target quarter
+      options:
+        - 2026 Q4
+        - 2027 Q1
+        - 2027 Q2
+        - 2027 Q3
+        - 2027 Q4
+        - Later
+    validations:
+      required: true

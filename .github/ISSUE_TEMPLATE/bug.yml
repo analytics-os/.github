@@ -1,0 +1,59 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly (a failed pull, wrong numbers, a dashboard or API error).
+title: "[Bug]: "
+type: Bug
+labels: [needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. analytics-os holds the studio's tracking-data Workers (search-console, seo-warehouse).
+        Please search existing issues first. Never paste API keys, service-account JSON or Semrush trial tokens.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem. Include the run/date, site or domain, and endpoint if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Call GET /api/...
+        2. ...
+        3. See error
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / surface
+      multiple: true
+      options:
+        - Cloudflare Worker / Workflow (scheduled pull, cron)
+        - Web dashboard (/)
+        - JSON API (/api/*)
+        - D1 / R2 storage
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: Deployed commit SHA, Worker version ID, or date of the affected run.
+      placeholder: e.g. 3f2a1bc or 2026-11-05 05:41 UTC run
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or output
+      description: Paste Worker logs, Workflow step errors or API responses. This is rendered as code automatically.
+      render: shell

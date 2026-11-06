@@ -1,0 +1,35 @@
+name: Feature request
+description: Propose new data, a new report, or an improvement to an existing pipeline or dashboard.
+title: "[Feature]: "
+type: Feature
+labels: [needs-triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can't you do today, and who is affected? Describe the problem, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should we build? Include data sources, tables or endpoints involved.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches, workarounds, or why doing nothing isn't good enough.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know it's done? Use a task list.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
