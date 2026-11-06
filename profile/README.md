@@ -5,7 +5,7 @@ The studio's own analytics and tracking-data pipelines for [Caldrion Ventures](h
 Part of the Caldrion (studio platform) portfolio.
 
 - Website: https://ventures.caldrion.com
-- Portfolio project: TODO(confirm): link the "Caldrion · Analytics" project board once it exists
+- Project board: [Caldrion · Analytics OS](https://github.com/orgs/analytics-os/projects/1) · Portfolio: [Portfolio · Caldrion](https://github.com/orgs/caldrion-com/projects/14)
 - Parent organization: [Caldrion](https://www.caldrion.com)
 
 ## What we build
@@ -28,4 +28,4 @@ Each pipeline pulls a third-party data source into **our own** Cloudflare D1 + R
 ## Contact
 
 - General: https://ventures.caldrion.com/contact
-- Security: please report vulnerabilities privately through the contact page above rather than in a public issue. TODO(confirm): dedicated security contact or SECURITY.md.
+- Security: please report vulnerabilities privately through [www.caldrion.com/contact](https://www.caldrion.com/contact) (the contact in [caldrion.com's security.txt](https://www.caldrion.com/.well-known/security.txt)) rather than in a public issue; see our [security policy](https://github.com/analytics-os/.github/blob/main/SECURITY.md).
