@@ -5,7 +5,6 @@ The studio's own analytics and tracking-data pipelines for [Caldrion Ventures](h
 Part of the Caldrion (studio platform) portfolio.
 
 - Website: https://ventures.caldrion.com
-- Project board: [Caldrion · Analytics OS](https://github.com/orgs/analytics-os/projects/1) · Portfolio: [Portfolio · Caldrion](https://github.com/orgs/caldrion-com/projects/14)
 - Parent organization: [Caldrion](https://www.caldrion.com)
 
 ## What we build
